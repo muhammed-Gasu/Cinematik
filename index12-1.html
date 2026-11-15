@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineSpectra</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+            <a class="header__logo" href="/">Cine<span>Spectra</span></a>
+
+            <nav>
+                <ul class="header__list">
+                    <li><a class="header__link" href="#catalog">Catalog</a></li>
+                    <li><a class="header__link" href="#movie">Movies</a></li>
+                    <li><a class="header__link" href="#about">About</a></li>
+                </ul>
+            </nav>
+
+            <a class="button" href="/">Sign In</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero__container">
+                <div class="hero__content">
+                    <h1 class="hero__title">Welcome to <span>CineSpectra!</span></h1>
+                    <p class="hero__text">
+                        With us you will immerse yourself in the world of anime and movies.
+                        Find new favourites, check the cast and enjoy watching.
+                    </p>
+                    <a class="button button--big" href="#catalog">Let's get started</a>
+                </div>
+
+                <img class="hero__image" src="images/Movie Night-amico.png" alt="">
+            </div>
+        </section>
+
+        <!-- О сервисе -->
+        <section class="about" id="about">
+            <div class="about__container">
+                <img class="about__image" src="images/Film rolls-amico (1).png" alt="">
+
+                <div class="about__content">
+                    <h2 class="about__title">All your favourite stories in one place</h2>
+                    <p class="about__text">
+                        Thousands of anime series and movies, sorted by year, type and category.
+                        Choose what you like and start watching in a few clicks.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="catalog" id="catalog">
+            <div class="catalog__container">
+                <h2 class="catalog__title">Anime</h2>
+
+                <div class="catalog__filters">
+                    <input class="catalog__input" type="text" placeholder="From year">
+                    <input class="catalog__input" type="text" placeholder="To year">
+                    <select class="catalog__input">
+                        <option>Select category</option>
+                        <option>Action</option>
+                        <option>Comedy</option>
+                        <option>Drama</option>
+                    </select>
+                    <a class="button" href="/">Clear</a>
+                </div>
+
+                <table class="catalog__table">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Year</th>
+                            <th>Type</th>
+                            <th>Episodes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Bocchi the Rock!</td>
+                            <td>2022</td>
+                            <td>TV</td>
+                            <td>12</td>
+                        </tr>
+                        <tr>
+                            <td>Your Name</td>
+                            <td>2016</td>
+                            <td>Movie</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>Attack on Titan</td>
+                            <td>2013</td>
+                            <td>TV</td>
+                            <td>87</td>
+                        </tr>
+                        <tr>
+                            <td>Spirited Away</td>
+                            <td>2001</td>
+                            <td>Movie</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>Naruto</td>
+                            <td>2002</td>
+                            <td>TV</td>
+                            <td>220</td>
+                        </tr>
+                        <tr>
+                            <td>Demon Slayer</td>
+                            <td>2019</td>
+                            <td>TV</td>
+                            <td>55</td>
+                        </tr>
+                        <tr>
+                            <td>Suzume</td>
+                            <td>2022</td>
+                            <td>Movie</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>One Punch Man</td>
+                            <td>2015</td>
+                            <td>TV</td>
+                            <td>24</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="catalog__pages">
+                    <a class="button button--outline" href="/">Previous</a>
+                    <a class="button" href="/">Next</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="movie" id="movie">
+            <div class="movie__container">
+                <img class="movie__cover" src="images/Preview Screen.png" alt="Spider-Man">
+
+                <h2 class="movie__title">Spider-Man</h2>
+                <p class="movie__subtitle">Across the Spider-Verse</p>
+
+                <ul class="movie__cast">
+                    <li class="movie__actor">
+                        <img class="movie__actor-photo" src="images/Rectangle 15.png" alt="Hailee Steinfeld">
+                        <p class="movie__actor-name">Hailee Steinfeld</p>
+                    </li>
+                    <li class="movie__actor">
+                        <img class="movie__actor-photo" src="images/Rectangle 16.png" alt="Shameik Moore">
+                        <p class="movie__actor-name">Shameik Moore</p>
+                    </li>
+                    <li class="movie__actor">
+                        <img class="movie__actor-photo" src="images/Rectangle 17.png" alt="Daniel Kaluuya">
+                        <p class="movie__actor-name">Daniel Kaluuya</p>
+                    </li>
+                    <li class="movie__actor">
+                        <img class="movie__actor-photo" src="images/Rectangle 18.png" alt="Oscar Isaac">
+                        <p class="movie__actor-name">Oscar Isaac</p>
+                    </li>
+                </ul>
+
+                <div class="movie__info">
+                    <h3 class="movie__heading">Description</h3>
+                    <p class="movie__text">
+                        Miles Morales travels across the Multiverse, where he meets a team of
+                        Spider-People who protect its existence. When the heroes disagree on how
+                        to handle a new threat, Miles must decide what it means to be a hero.
+                    </p>
+
+                    <h3 class="movie__heading">Directors</h3>
+                    <p class="movie__text">Joaquim Dos Santos, Kemp Powers, Justin K. Thompson</p>
+
+                    <h3 class="movie__heading">Writers</h3>
+                    <p class="movie__text">Phil Lord, Christopher Miller, David Callaham</p>
+                </div>
+
+                <h3 class="movie__heading">More like this</h3>
+                <ul class="movie__more">
+                    <li><img class="movie__poster" src="images/Rectangle 21.png" alt="Movie poster"></li>
+                    <li><img class="movie__poster" src="images/Rectangle 22.png" alt="Movie poster"></li>
+                    <li><img class="movie__poster" src="images/Rectangle 23.png" alt="Movie poster"></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__copy">© 2026 CineSpectra. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
